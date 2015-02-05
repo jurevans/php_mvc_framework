@@ -1,0 +1,177 @@
+/* BASE App CSS */
+
+/* GENERAL */
+
+.hidden
+{
+	display: none;
+}
+
+form p
+{
+	font-size: 12px;
+}
+
+.right, .left {
+	position: relative;
+	display: block;
+}
+
+.right {
+	float: right;
+}
+.left {
+	float: left;
+	margin-left: 10px;
+}
+
+.small-thumb {
+	height: 25px;
+}
+
+ul.thumbnails
+{
+	list-style-type: none;
+	list-style: none;
+	text-indent: 0;
+	padding: 0;
+}
+
+	ul.thumbnails li 
+	{
+		display: inline;
+		padding: 0;
+		margin: 0;
+	}
+
+/* Form style overrides */
+
+legend {
+	font-weight: bold;
+	font-size: 1.1em;
+	padding-bottom: 10px;
+}
+
+/* Tables!!!! */
+
+table {
+	padding: 0;
+	margin: 0;
+	font-size: 0.9em;
+	border-collapse:collapse;
+	width: 100%;
+}
+	/* TABLE ROWS */
+	tr {
+		padding: 0;
+		margin: 0;
+	}
+
+		/* TABLE HEADERS */
+		thead tr, tr.header {
+			background-color: #000;
+			color: #fff;
+		}
+
+			tr.header td, tr.header th {
+				border-right: 1px solid #ccc;
+				font-weight: normal;
+				letter-spacing: 0.1em;
+			}
+
+			tr.header td:last-child {
+				border-right: 0;
+			}
+
+		tr.sub-header {
+			background-color: #999;
+			color: #fff;
+		}
+
+			tr.sub-header td, tr.sub-header th {
+				letter-spacing: 0.1em;
+			}
+
+		tr.no-bottom-border td {
+			border-bottom: none;
+		}
+
+		/* TABLE CELLS */
+		th, td {
+			text-align: left;
+			padding: 8px;
+			margin: 0;
+		}
+
+		th {
+			vertical-align: middle;
+		}
+
+		td {
+			vertical-align: top;
+			border-bottom: 1px solid #ddd;
+			border-right: 1px solid #ddd;
+			border-left: 1px solid #ddd;
+		}
+	tr.bold td {
+		font-weight: bold;
+	}
+
+
+table.osha-report td {
+	border-right: 0;
+	border-left: 0;
+}
+
+	tr:last-child td {
+		border-bottom: 0;
+	}
+
+	td:first-child {
+		border-left: 0;
+	}
+
+	td:last-child {
+		border-right: 0;
+	}
+
+/* FORMS */
+
+label {
+	display: block !important;
+	clear: both;
+	font-weight: bold !important;
+	padding-top: 10px;
+}
+
+.show-form-controls {
+	clear: both;
+}
+
+/* FORM VALIDATION */
+
+label.error { 
+	position: relative;
+	float: left;
+	color: red; 
+	padding-top: .2em; 
+	margin-bottom: 20px;
+	vertical-align: top; 
+	font-weight:bold
+}
+
+.input-validation-error { 
+	display: block !important;
+}
+
+/* FONT STUFF */
+
+.text-faded {
+	color: #999;
+}
+
+@media print
+{
+	
+}
+
