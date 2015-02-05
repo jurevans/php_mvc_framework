@@ -2,7 +2,7 @@
 
 namespace Auth\Middleware;
 
-require_once('lib/Authentication/CAS.php');
+// require_once('lib/Authentication/Authentication.php');
 
 use \BASE\Models as Models;
 
@@ -39,7 +39,7 @@ class AuthSession extends \Slim\Middleware
 		$named_routes = $this->app->router()->getNamedRoutes(); 
 		$routes = array();
 
-		// Example: $_SESSION['user'] should be set by CAS 
+		// Example: $_SESSION['user'] should be set by Authentication method 
 		$username = ( isset( $_SESSION['user'] ) ) ? $_SESSION['user'] : '';
 
 		// USER roles should be defined in DB, e.g., $user_role = $user_model->getRoleByUsername( $_SESSION['user'] );
