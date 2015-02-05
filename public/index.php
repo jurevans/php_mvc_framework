@@ -15,8 +15,8 @@ $config = array(
         //'templates.path' => 'api/smarty/templates/'
 );
 
-$ehs = new BASE( $config );
-$app = $ehs->init();
+$base = new BASE( $config );
+$app = $base->init();
 
 // API Endpoint Base Route
 $app->get('/', function() use ($app) 
