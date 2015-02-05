@@ -1,6 +1,6 @@
 <?php
 
-// This index initializes the EHS API
+// This index initializes the Base API
 
 ini_set('display_errors',1);
 error_reporting(-1);
